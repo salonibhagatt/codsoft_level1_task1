@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Open+Sans:wght@400;600;700&display=swap");
+
+/* General Styles */
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container {
+    width: 80px; /* Adjust size as needed */
+}
+
+.logo {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.header-title {
+    margin-left: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    margin-left: auto; /* Pushes the nav to the right */
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li:first-child {
+    margin-left: 0; /* Adjust for the first link */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    position: relative;
+}
+
+/* Navbar Toggler Button */
+.navbar-toggler {
+    border: none;
+    background: transparent;
+    color: #333;
+}
+
+/* Dropdown Styles */
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.dropdown li {
+    padding: 10px;
+    width: 200px;
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    .header-title {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-end; /* Align nav items to the right */
+        margin-top: 10px; /* Add some margin between logo and nav */
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/* Welcome Message Styles */
+.welcome-message {
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    font-size: 36px;
+    margin-top: 20px;
+}
+
+/* Services Styles */
+.services {
+    margin-top: 20px;
+}
+
+.service {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.service-image {
+    width: 100%;
+    max-width: 195px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.service-info {
+    font-size: 14px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-column {
+    margin-right: 20px;
+}
+
+.footer-column:last-child {
+    margin-right: 0;
+}
+
+.footer-column h4 {
+    margin-bottom: 10px;
+}
+
+.footer-links li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.footer-contact {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* Responsive Footer Styles */
+@media only screen and (max-width: 768px) {
+    .footer-columns {
+        flex-direction: column;
+    }
+
+    .footer-column {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
